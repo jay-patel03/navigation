@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,88 +8,102 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        .main{
+        .main {
             border: 1px solid black;
             height: 600px;
             display: flex;
             align-items: center;
             justify-content: space-around;
-            gap: 30px;
             flex-wrap: wrap;
         }
-        @media screen and (max-width: 200px){
-            .main{
-                background-color: red;
-            }
-            
-        }
-        .img1{
+        .img1 {
             height: 600px;
-            width: 30%;
+            width: 600px;
             background-image: url("jy.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: 50%;
-            flex-wrap: wrap;
+            border: 4px solid red;
         }
-        .child1{
-            height: 530px;
-            width: 50%;
+        .child1 {
+            height: 350px ;
+            width: 100%;
             padding-left: 10px;
             padding-right: 10px;
-            p{
+            flex-wrap: wrap;
+            border: 4px solid black;
+
+            p {
                 text-align: justify;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .main {
+                background-color: red;
+            }
+
+            .img1 {
+                width: 300px;
+                height: 300px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Jay</a>
-        <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
 
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-
-    </div>
     </nav>
     <div class="main">
         <div class="img1">
         </div>
         <div class="child1">
             <h1>Information</h1>
-            <p>My name is Jay Tarpada, and I am an enthusiastic and dedicated student with a strong interest in the field of Information Technology. I am currently pursuing my studies in computer-related subjects, where I am building a solid foundation in programming, web development, and networking.
-                I have knowledge of technologies like HTML, CSS, JavaScript, and Python, and I enjoy creating simple websites and solving logical problems through programming. I am particularly interested in developing user-friendly web applications and continuously improving my technical skills.</p>
-            <p>My goal is to become a skilled web developer and contribute to innovative projects in the IT industry. I am always eager to learn new technologies and gain practical experience through real-world projects and opportunities.</p>
-             <ul>
+            <p>My name is Jay Tarpada, and I am an enthusiastic and dedicated student with a strong interest in the
+                field of Information Technology. I am currently pursuing my studies in computer-related subjects, where
+                I am building a solid foundation in programming, web development, and networking.
+                I have knowledge of technologies like HTML, CSS, JavaScript, and Python, and I enjoy creating simple
+                websites and solving logical problems through programming. I am particularly interested in developing
+                user-friendly web applications and continuously improving my technical skills.</p>
+            <p>My goal is to become a skilled web developer and contribute to innovative projects in the IT industry. I
+                am always eager to learn new technologies and gain practical experience through real-world projects and
+                opportunities.</p>
+            <ul>
                 <li>Currently pursuing ( B.Sc IT )</li> <br>
                 <li>Studying core subjects such as:</li> <br>
                 <ul>
                     <li>Programming (Python, C, C++)</li> <br>
                     <li>Web Development (HTML, CSS, JavaScript)</li> <br>
                     <li>Computer Networks</li> <br>
-             </ul>
+                </ul>
         </div>
     </div>
 </body>
+
 </html>
