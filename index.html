@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="page1.html">
+    <link rel="stylesheet" href="page2.html">
+    <link rel="stylesheet" href="page3.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .main {
-            border: 1px solid black;
-            height: 600px;
+        .main1 {
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -37,7 +39,7 @@
         }
 
         @media screen and (max-width: 500px) {
-            .main {
+            .main1 {
                 border: none;
             }
 
@@ -46,11 +48,57 @@
                 height: 300px;
             }
         }
+        .main2{
+            height: 50px;
+            margin-top: 165px;
+            button{
+                border: 1px solid black;
+                margin-left: 30px;
+                cursor: pointer;
+                height: 50px;
+                width: 40%;
+                font-size: 20px;
+            }
+            button:hover{
+                background-color: rgb(58, 181, 181);
+                color: aliceblue;
+                transform: 0.5;
+            }
+        }
+        .main3{
+            height: 900px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card-body1{
+            height: 210px;
+            width: 70%;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .card-body2{
+            height: 210px;
+            width: 70%;
+        }
+        .card-body3{
+            height: 210px;
+            width: 70%;
+        }
+        .card-img-top{
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+        .card-img-top:hover{
+            background-color: aqua;
+        }
     </style>
 </head>
-
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Jay</a>
@@ -78,30 +126,50 @@
 
         </div>
     </nav>
-    <div class="main">
+    <div class="main1">
         <div class="img1">
         </div>
         <div class="child1">
-            <h1>Information</h1>
-            <p>My name is Jay Tarpada, and I am an enthusiastic and dedicated student with a strong interest in the
+            <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
+                About us
+            </h2>
+            <br>
+            <h2>Information</h2>
+            <p><b style="color: rgb(69, 213, 213);">My name is Jay Tarpada,</b> and I am an enthusiastic and dedicated student with a strong interest in the
                 field of Information Technology. I am currently pursuing my studies in computer-related subjects, where
                 I am building a solid foundation in programming, web development, and networking.
                 I have knowledge of technologies like HTML, CSS, JavaScript, and Python, and I enjoy creating simple
                 websites and solving logical problems through programming. I am particularly interested in developing
                 user-friendly web applications and continuously improving my technical skills.</p>
-            <p>My goal is to become a skilled web developer and contribute to innovative projects in the IT industry. I
-                am always eager to learn new technologies and gain practical experience through real-world projects and
-                opportunities.</p>
             <ul>
                 <li>Currently pursuing ( B.Sc IT )</li> <br>
                 <li>Studying core subjects such as:</li> <br>
                 <ul>
                     <li>Programming (Python, C, C++)</li> <br>
                     <li>Web Development (HTML, CSS, JavaScript)</li> <br>
-                    <li>Computer Networks</li> <br>
                 </ul>
         </div>
     </div>
+    <div class="main2"> 
+        <button type="button">Read More</button> 
+    </div>
+    <div class="main3"> 
+            <div class="card-body1"> 
+                <img class="card-img-top" src="Screenshot 2026-06-06 174000.png" height="170px" style="background-color: aqua;"> 
+                <h4 class="card-title" ></h4> 
+                <a href="page1.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
+            </div> 
+            <div class="card-body2"> 
+                <img class="card-img-top" src="Screenshot 2026-06-06 174322.png" alt="" height="170px"> 
+                <h4 class="card-title"></h4>                     
+                <a href="page2.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
+            </div> 
+            <div class="card-body3"> 
+                <img class="card-img-top" src="Screenshot 2026-06-06 174454.png" alt="" height="170px"> 
+                <h4 class="card-title"></h4> 
+                <a href="page3.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
+            </div> 
+    </div> 
 </body>
 
 </html>
