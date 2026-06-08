@@ -52,7 +52,8 @@
             height: 50px;
             margin-top: 280px;
             button{
-                border: 1px solid black;
+                border-radius: 10px;
+                background-color: rgb(128, 128, 128);
                 margin-left: 30px;
                 cursor: pointer;
                 height: 50px;
@@ -60,8 +61,8 @@
                 font-size: 20px;
             }
             button:hover{
-                background-color: rgb(58, 181, 181);
-                color: aliceblue;
+                background-color: rgb(37, 167, 174);
+                color: rgb(245, 247, 248);
                 transform: 0.5;
             }
         }
@@ -92,6 +93,19 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .main4{
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .div1{
+                font-size: 26px;
+                border: 1px solid black;
+                color: aliceblue;
+                
+            }
     </style>
 </head>
 <body>
@@ -131,7 +145,7 @@
             </h2>
             <br>
             <h2>Information</h2>
-            <p><b style="color: rgb(69, 213, 213);">My name is Jay Tarpada,</b> and I am an enthusiastic and dedicated student with a strong interest in the
+            <p><b>My name is Jay Tarpada,</b> and I am an enthusiastic and dedicated student with a strong interest in the
                 field of Information Technology. I am currently pursuing my studies in computer-related subjects, where
                 I am building a solid foundation in programming, web development, and networking.
                 I have knowledge of technologies like HTML, CSS, JavaScript, and Python, and I enjoy creating simple
@@ -146,26 +160,38 @@
                 </ul>
         </div>
     </div>
-    <div class="main2"> 
-        <button type="button">Read More</button> 
+    <div class="main2">
+    <button type="button" onclick="scrollToCards()">Read More</button>
     </div>
-    <div class="main3"> 
-            <div class="card-body1"> 
-                <img class="card-img-top" src="img1.png" height="170px" style="background-color: aqua;"> 
-                <h4 class="card-title" ></h4> 
-                <a href="page1.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
-            </div> 
-            <div class="card-body2"> 
-                <img class="card-img-top" src=" img2.png" alt="" height="170px"> 
-                <h4 class="card-title"></h4>                     
-                <a href="page2.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
-            </div> 
-            <div class="card-body3"> 
-                <img class="card-img-top" src="img3.png" alt="" height="170px"> 
-                <h4 class="card-title"></h4> 
-                <a href="page3.html" class="btn btn-primary" style="width: 100%;">See Details</a> 
-            </div> 
-    </div> 
+
+    <div class="main3" id="details-section">
+        <div class="card-body1">
+            <img class="card-img-top" src="img1.png" height="170px" style="background-color: aqua;">
+            <a href="page1.html" class="btn btn-danger" style="width: 100%;">See Details</a>
+        </div>
+
+        <div class="card-body2">
+            <img class="card-img-top" src="img2.png" alt="" height="170px">
+            <a href="page2.html" class="btn btn-danger" style="width: 100%;">See Details</a>
+        </div>
+
+        <div class="card-body3">
+            <img class="card-img-top" src="img3.png" alt="" height="170px">
+            <a href="page3.html" class="btn btn-danger" style="width: 100%;">See Details</a>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="div1">
+            Develop By Jay Tarapada in 2026...!
+        </div>
+    </div>
+<script>
+    function scrollToCards() {
+        document.getElementById("details-section").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
 </body>
 
 </html>
